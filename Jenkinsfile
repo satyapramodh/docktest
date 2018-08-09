@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker image ls'
+        sh 'env.docker image ls'
       }
     }
     stage('test') {
